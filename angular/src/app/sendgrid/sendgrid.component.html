@@ -1,0 +1,38 @@
+
+<form [formGroup]="sendgridForm">
+    <div>
+        <div>
+            <div class="row">
+                <div class="col">
+                    <mat-form-field appearance="fill">
+                        <mat-label>From:</mat-label>
+                        <input id="from" matInput formControlName="from" type="text" maxlength="128" placeholder="From"
+                            autocomplete="off" />
+
+                    </mat-form-field>
+                </div>
+                <div class="col">
+                    <mat-form-field appearance="fill">
+                        <mat-label>To:</mat-label>
+                        <input id="to" matInput formControlName="to" type="text" maxlength="128" placeholder="To"
+                            autocomplete="off" />
+
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <mat-form-field appearance="fill">
+                            <mat-label>Message</mat-label>
+                            <textarea id="message" matInput formControlName="message" placeholder="Message" matInput></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-outline-primary" (click)="pushSendEmail">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
