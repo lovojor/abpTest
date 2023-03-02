@@ -28,6 +28,7 @@ export class SendgridComponent {
   }
 
   pushSendEmail() {
+    console.log(this.sendgridForm.value);
     this.sendgridService.PushSend(this.sendgridForm.value).subscribe(data => {
       console.log(data);
     });

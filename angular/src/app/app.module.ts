@@ -16,6 +16,7 @@ import { AppComponent } from './app.component';
 import { APP_ROUTE_PROVIDER } from './route.provider';
 import { FeatureManagementModule } from '@abp/ng.feature-management';
 import { AbpOAuthModule } from '@abp/ng.oauth';
+import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { SendgridComponent } from './sendgrid/sendgrid.component';
 
@@ -37,7 +38,8 @@ import { SendgridComponent } from './sendgrid/sendgrid.component';
     ThemeLeptonXModule.forRoot(),
     SideMenuLayoutModule.forRoot(),
     FeatureManagementModule.forRoot(),
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatInputModule
   ],
   declarations: [AppComponent, SendgridComponent],
   providers: [APP_ROUTE_PROVIDER],
